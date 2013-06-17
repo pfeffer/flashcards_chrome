@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Flash Cards",
+  "description": "Helps your memory",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "click to save selected text"
+  },
+  // "content_scripts": [
+  //   {
+  //     "matches": ["*://*/*"],
+  //     // "css": ["mystyles.css"],
+  //     // "js": ["jquery-2.0.2.min.js", "content.js"]
+  //     "js": ["content.js"]
+  //   }
+  // ],
+  "background": {
+    // "scripts": ["jquery-2.0.2.min.js", "eventPage.js"],
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}

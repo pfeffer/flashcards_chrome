@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
-    <form>
+    <p id="tryText"> text </p>
+    <form id="myForm">
       <fieldset>
         <label for="word">Word: </label>
         <input type="text" id="word" name="word"/>
@@ -10,10 +11,10 @@
         <input type="text" id="tag" name="tag"/>
       </fieldset>
       <fieldset>
-        <button type="submit">Add
-        </button>
+        <button type="submit">Add</button>
       </fieldset>
     </form>
+    <script src="jquery-2.0.2.min.js"></script>
     <script src="popup.js"></script>
   </head>
   <body>
